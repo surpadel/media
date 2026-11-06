@@ -1,0 +1,64 @@
+name: Traer del gateway
+
+# Trae al repo archivos ya generados por el media-gateway de Cloudflare, para
+# cuando Claude necesita el archivo en su espacio de trabajo (montar un reel,
+# armar un PDF). No genera nada ni llama a APIMart. Cada corrida es
+# independiente (sin cola compartida) y el push reintenta si otra corrida
+# subió algo al mismo tiempo.
+#
+# Entrada "archivos" (JSON):
+#   [{"ruta": "pruebas/x.png"}, {"ruta": "reels/toma1.mp4", "destino": "gateway/reels/toma1.mp4"}]
+# "ruta" es la del gateway (lo que va después de /f/). "destino" por defecto: gateway/<ruta>.
+
+on:
+  workflow_dispatch:
+    inputs:
+      archivos:
+        description: 'JSON: [{"ruta": "carpeta/archivo.png"}]'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  traer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Bajar del gateway
+        env:
+          ARCHIVOS: ${{ inputs.archivos }}
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, re, urllib.request
+          BASE = "https://media-gateway.nicolas-f-gallo.workers.dev/f/"
+          for a in json.loads(os.environ["ARCHIVOS"]):
+              ruta = a["ruta"]
+              dest = a.get("destino") or "gateway/" + ruta
+              if not re.fullmatch(r"[A-Za-z0-9._/-]+", ruta) or ".." in ruta:
+                  raise SystemExit(f"ruta inválida: {ruta}")
+              if not dest.startswith("gateway/") or ".." in dest:
+                  raise SystemExit(f"destino fuera de gateway/: {dest}")
+              req = urllib.request.Request(BASE + ruta, headers={"User-Agent": "traer-gateway/1.0"})
+              with urllib.request.urlopen(req, timeout=180) as r:
+                  datos = r.read()
+              p = pathlib.Path(dest)
+              p.parent.mkdir(parents=True, exist_ok=True)
+              p.write_bytes(datos)
+              print(f"{dest}: {len(datos) // 1024} KB")
+          PY
+      - name: Guardar con reintento
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gateway
+          if git diff --cached --quiet; then echo "nada nuevo"; exit 0; fi
+          git commit -m "Gateway: traer archivos [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((i * 3))
+          done
+          exit 1
