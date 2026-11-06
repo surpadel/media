@@ -1,0 +1,45 @@
+name: Generar APIMart
+
+# Genera tomas de video e imágenes (fondos) con la API de APIMart (secreto APIMART_API_KEY),
+# las baja al repo y anota costo y saldo. Corre cuando cambia
+# apimart/generar.json o a mano (a mano solo actualiza el saldo si no hay
+# pedidos pendientes). Ver apimart/generar.py.
+on:
+  push:
+    branches: [main]
+    paths: ["apimart/generar.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generar-apimart
+  cancel-in-progress: false
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    env:
+      # Carpetas donde se pueden guardar videos e imágenes (lo único que cambia entre repos)
+      APIMART_CARPETAS: "img"
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configurar git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Generar pendientes
+        env:
+          APIMART_API_KEY: ${{ secrets.APIMART_API_KEY }}
+        run: python3 apimart/generar.py
+      - name: Guardar en el repositorio
+        if: always()
+        run: |
+          for c in ${APIMART_CARPETAS//,/ }; do git add "$c" 2>/dev/null || true; done
+          git add apimart/registro.json apimart/saldo.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nada nuevo"; exit 0; fi
+          git commit -m "APIMart: imágenes generadas [skip ci]"
+          git pull --rebase origin main
+          git push
