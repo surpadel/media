@@ -32,7 +32,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Generar pendientes
         env:
-          APIMART_API_KEY: ${{ secrets.APIMART_API_KEY }}
+          APIMART_API_KEY: ${{ secrets.API_MART_KEY }}
         run: python3 apimart/generar.py
       - name: Guardar en el repositorio
         if: always()
