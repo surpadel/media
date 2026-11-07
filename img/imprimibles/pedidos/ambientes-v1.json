@@ -1,0 +1,109 @@
+{
+ "nota": "Biblioteca de ambientes v1 (06/11/2026): hojas de escenario vacías, una por lugar. Se pasan como Image de referencia en cada grilla.",
+ "pedidos": [
+  {
+   "id": "2026-11-06-ambiente-casa-cocina",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER only (flat smooth color, no outlines, soft tinted lavender shadows, rounded drop-like shapes). Image 2 = an approved scene of the brand: copy ONLY how walls, floor and furniture are rendered; do NOT copy its people or its furniture. [STYLE] Children's picture-book background, flat smooth color, NO outlines, rounded chunky dollhouse-proportion furniture, colored lavender shadows never grey, warm soft late-afternoon light from Buenos Aires. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral, deep navy #2B2F5E only for small details. Exactly ONE object in deep indigo #2E3272. [SET] Kitchen-dining room of a modest house in Greater Buenos Aires. The ONLY objects are: ONE rectangular light-wood dining table centered-left with EXACTLY FOUR simple wooden chairs (two on each long side); on the table ONE thermos and ONE mate gourd; against the back wall ONE low cream kitchen counter with EXACTLY TWO closed cupboard doors and ONE small sink; ONE simple round wall clock with no numbers; ONE window on the right wall with a plain sky and one tree outside; ONE deep indigo fruit bowl with three oranges on the counter. [EMPTY SET] This is an EMPTY set sheet for later scenes: NO people, NO animals, NO mascot. Frontal level camera at the eye height of a standing child, full room width, flat horizontal floor line. Keep the CENTRAL FOREGROUND floor completely empty (characters will be added there). [AVOID] Do not add any object that is not listed. No text, letters, numbers, signs, logos, posters with writing, watermark or border. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/casa-cocina.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-ninos-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · ninos · casa-cocina"
+  },
+  {
+   "id": "2026-11-06-ambiente-aula-primaria",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER only (flat smooth color, no outlines, soft tinted lavender shadows, rounded drop-like shapes). Image 2 = an approved scene of the brand: copy ONLY how walls, floor and furniture are rendered; do NOT copy its people or its furniture. [STYLE] Children's picture-book background, flat smooth color, NO outlines, rounded chunky dollhouse-proportion furniture, colored lavender shadows never grey, warm soft late-afternoon light from Buenos Aires. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral, deep navy #2B2F5E only for small details. Exactly ONE object in deep indigo #2E3272. [SET] Primary school classroom in Argentina. The ONLY objects are: ONE wide sage green chalkboard on the back wall, completely empty; ONE teacher's desk on the left with ONE closed book on it; EXACTLY THREE small student desks in a row on the right, each with ONE chair; ONE low open shelf with EXACTLY FOUR colored boxes; ONE small glass tank on the shelf for a pet tortoise (empty); ONE deep indigo school bag hanging on a hook; a pale lavender floor. [EMPTY SET] This is an EMPTY set sheet for later scenes: NO people, NO animals, NO mascot. Frontal level camera at the eye height of a standing child, full room width, flat horizontal floor line. Keep the CENTRAL FOREGROUND floor completely empty (characters will be added there). [AVOID] Do not add any object that is not listed. No text, letters, numbers, signs, logos, posters with writing, watermark or border. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/aula-primaria.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-ninos-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · ninos · aula-primaria"
+  },
+  {
+   "id": "2026-11-06-ambiente-plaza",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER only (flat smooth color, no outlines, soft tinted lavender shadows, rounded drop-like shapes). Image 2 = an approved scene of the brand: copy ONLY how walls, floor and furniture are rendered; do NOT copy its people or its furniture. [STYLE] Children's picture-book background, flat smooth color, NO outlines, rounded chunky dollhouse-proportion furniture, colored lavender shadows never grey, warm soft late-afternoon light from Buenos Aires. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral, deep navy #2B2F5E only for small details. Exactly ONE object in deep indigo #2E3272. [SET] Neighbourhood square (plaza) in Buenos Aires on a calm day. The ONLY objects are: ONE small rounded slide on the left; ONE double swing with EXACTLY TWO seats in the middle-back; ONE wooden park bench on the right; ONE big leafy tree (a palo borracho with pink flowers) behind the bench; ONE small hornero mud nest on a branch (no bird); a low green hedge along the back; a sand path; ONE deep indigo trash bin. Soft blue sky. [EMPTY SET] This is an EMPTY set sheet for later scenes: NO people, NO animals, NO mascot. Frontal level camera at the eye height of a standing child, full room width, flat horizontal floor line. Keep the CENTRAL FOREGROUND floor completely empty (characters will be added there). [AVOID] Do not add any object that is not listed. No text, letters, numbers, signs, logos, posters with writing, watermark or border. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/plaza.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-ninos-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · ninos · plaza"
+  },
+  {
+   "id": "2026-11-06-ambiente-consultorio",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER only (flat smooth color, no outlines, soft tinted lavender shadows, rounded drop-like shapes). Image 2 = an approved scene of the brand: copy ONLY how walls, floor and furniture are rendered; do NOT copy its people or its furniture. [STYLE] Children's picture-book background, flat smooth color, NO outlines, rounded chunky dollhouse-proportion furniture, colored lavender shadows never grey, warm soft late-afternoon light from Buenos Aires. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral, deep navy #2B2F5E only for small details. Exactly ONE object in deep indigo #2E3272. [SET] Calm child therapist's office. The ONLY objects are: ONE low round light-wood table in the centre-left with EXACTLY TWO small chairs; ONE soft round cushion on the floor; ONE low open shelf on the back wall with EXACTLY SIX simple toy boxes and ONE stack of picture cards; ONE big soft green plant in a pot in the corner; ONE window with a sheer curtain; ONE small deep indigo rug under the table. [EMPTY SET] This is an EMPTY set sheet for later scenes: NO people, NO animals, NO mascot. Frontal level camera at the eye height of a standing child, full room width, flat horizontal floor line. Keep the CENTRAL FOREGROUND floor completely empty (characters will be added there). [AVOID] Do not add any object that is not listed. No text, letters, numbers, signs, logos, posters with writing, watermark or border. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/consultorio.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-ninos-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · ninos · consultorio"
+  },
+  {
+   "id": "2026-11-06-ambiente-aula-secundaria",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER for color and finish only. Image 2 = an approved teen scene of the brand: copy ONLY how walls, floor and furniture are rendered (thin clean deep navy #2B2F5E outlines, flat color); do NOT copy its people. [STYLE] Graphic-novel background for teenagers: flat smooth color, thin clean outlines in deep navy #2B2F5E (never black), soft tinted lavender shadows, realistic proportions (not toy-like, not childish), calm and clean. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral. Exactly ONE object in deep indigo #2E3272. [SET] Secondary school classroom and corridor feel, Argentina. The ONLY objects are: ONE long empty whiteboard on the back wall; ONE teacher's desk on the left; EXACTLY FOUR double student desks in two rows, each with TWO chairs; ONE wall of grey metal lockers on the right with EXACTLY SIX doors; ONE wall clock with no numbers; ONE big window with plain sky; ONE deep indigo backpack on a chair. [EMPTY SET] This is an EMPTY set sheet for later scenes: NO people, NO animals, NO mascot. Frontal level camera at the eye height of a standing child, full room width, flat horizontal floor line. Keep the CENTRAL FOREGROUND floor completely empty (characters will be added there). [AVOID] Do not add any object that is not listed. No text, letters, numbers, signs, logos, posters with writing, watermark or border. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/aula-secundaria.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-teens-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · adolescentes · aula-secundaria"
+  },
+  {
+   "id": "2026-11-06-ambiente-colectivo",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER for color and finish only. Image 2 = an approved teen scene of the brand: copy ONLY how walls, floor and furniture are rendered (thin clean deep navy #2B2F5E outlines, flat color); do NOT copy its people. [STYLE] Graphic-novel background for teenagers: flat smooth color, thin clean outlines in deep navy #2B2F5E (never black), soft tinted lavender shadows, realistic proportions (not toy-like, not childish), calm and clean. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral. Exactly ONE object in deep indigo #2E3272. [SET] Inside a Buenos Aires city bus (colectivo), side view of the aisle. The ONLY objects are: EXACTLY FOUR pairs of blue-grey seats in a row; vertical yellow handrail poles between them; ONE horizontal handrail along the ceiling with hanging straps; a long row of windows showing a blurred street with trees; ONE stop-request button on a pole; ONE deep indigo seat cushion among the others. [EMPTY SET] This is an EMPTY set sheet for later scenes: NO people, NO animals, NO mascot. Frontal level camera at the eye height of a standing child, full room width, flat horizontal floor line. Keep the CENTRAL FOREGROUND floor completely empty (characters will be added there). [AVOID] Do not add any object that is not listed. No text, letters, numbers, signs, logos, posters with writing, watermark or border. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/colectivo.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-teens-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · adolescentes · colectivo"
+  },
+  {
+   "id": "2026-11-06-ambiente-cuarto-teen",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER for color and finish only. Image 2 = an approved teen scene of the brand: copy ONLY how walls, floor and furniture are rendered (thin clean deep navy #2B2F5E outlines, flat color); do NOT copy its people. [STYLE] Graphic-novel background for teenagers: flat smooth color, thin clean outlines in deep navy #2B2F5E (never black), soft tinted lavender shadows, realistic proportions (not toy-like, not childish), calm and clean. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral. Exactly ONE object in deep indigo #2E3272. [SET] A teenager's bedroom. The ONLY objects are: ONE single bed against the back wall with a sage blanket and ONE pillow; ONE desk on the right with ONE closed laptop and ONE desk lamp; ONE desk chair; ONE small shelf above the desk with EXACTLY FIVE books and ONE small plant; ONE corkboard with plain photos (no writing); ONE window with plain sky; ONE deep indigo beanbag on the floor. [EMPTY SET] This is an EMPTY set sheet for later scenes: NO people, NO animals, NO mascot. Frontal level camera at the eye height of a standing child, full room width, flat horizontal floor line. Keep the CENTRAL FOREGROUND floor completely empty (characters will be added there). [AVOID] Do not add any object that is not listed. No text, letters, numbers, signs, logos, posters with writing, watermark or border. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/cuarto-teen.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-teens-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · adolescentes · cuarto-teen"
+  },
+  {
+   "id": "2026-11-06-ambiente-pantalla-chat",
+   "prompt": "[REFERENCES] Image 1 = official sheet of the brand mascot: STYLE MASTER for color and finish only. Image 2 = an approved teen scene of the brand: copy ONLY how walls, floor and furniture are rendered (thin clean deep navy #2B2F5E outlines, flat color); do NOT copy its people. [STYLE] Graphic-novel background for teenagers: flat smooth color, thin clean outlines in deep navy #2B2F5E (never black), soft tinted lavender shadows, realistic proportions (not toy-like, not childish), calm and clean. Palette: cream #FBF7EE walls, pale lavender #EFEAF7, lavender #B9A9DB, muted dusty teal, soft ochre, sage, soft coral. Exactly ONE object in deep indigo #2E3272. [SET] A big smartphone seen straight from the front, centered, filling most of the image height, on a plain cream background. The phone screen shows a generic messaging app WITHOUT any text: a simple top bar with ONE round blank avatar circle; EXACTLY FIVE empty message bubbles alternating: incoming bubbles on the left in pale lavender, outgoing bubbles on the right in soft dusty teal, of different lengths, all completely empty with NO letters; a simple empty input bar at the bottom. The phone body is deep indigo #2E3272. [AVOID] No people, no hands, no text, letters, numbers, emojis, icons with writing, logos or watermark. Not 3D, no black outlines, no photorealism.",
+   "modelo": "nano-banana-2",
+   "resolucion": "2K",
+   "formato": "4:3",
+   "destino": "imprimibles/ambientes/pantalla-chat.png",
+   "imagenes": [
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/tinta-vueltas.jpg",
+    "https://raw.githubusercontent.com/surpadel/media/main/img/imprimibles/estilo-teens-v5.jpg"
+   ],
+   "nota": "Biblioteca de ambientes · adolescentes · pantalla-chat"
+  }
+ ]
+}
