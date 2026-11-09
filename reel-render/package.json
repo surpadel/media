@@ -1,0 +1,7 @@
+{
+  "name": "reel-render",
+  "private": true,
+  "scripts": { "deploy": "wrangler deploy" },
+  "dependencies": { "@cloudflare/containers": "^0.0.30" },
+  "devDependencies": { "wrangler": "^4.40.0", "@cloudflare/workers-types": "^4.20251101.0", "typescript": "^5.6.0" }
+}

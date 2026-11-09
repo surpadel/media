@@ -1,0 +1,26 @@
+{
+  "name": "reel-render",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "containers": [
+    {
+      "class_name": "Render",
+      "image": "./container/Dockerfile",
+      "instance_type": "standard-2",
+      "max_instances": 5
+    }
+  ],
+  "durable_objects": {
+    "bindings": [{ "name": "RENDER", "class_name": "Render" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Render"] }],
+  "kv_namespaces": [{ "binding": "ESTADO", "id": "d4baef8520584635b8958feb0008c145" }],
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "media-gateway" }],
+  "queues": {
+    "consumers": [
+      { "queue": "reel-render", "max_batch_size": 1, "max_concurrency": 5, "max_retries": 1 }
+    ]
+  },
+  "vars": { "BASE_PUBLICA": "https://media-gateway.nicolas-f-gallo.workers.dev/f/" },
+  "observability": { "enabled": true }
+}
