@@ -19,6 +19,12 @@ interface Receta {
 export class Render extends Container {
   defaultPort = 8080;
   sleepAfter = "3m";
+
+  // Al vencer sleepAfter: SIGKILL directo. El SIGTERM por defecto lo ignoró el
+  // contenedor y quedó prendido del 10 al 14/11 (~US$2,70 por día).
+  override async onActivityExpired() {
+    if (this.ctx.container?.running) await this.destroy();
+  }
 }
 
 const clave = (id: string) => `render:${id}`;

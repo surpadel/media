@@ -96,4 +96,9 @@ class Manejador(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    # Como PID 1, Python ignora SIGTERM si no hay handler: sin esto el contenedor
+    # nunca se apaga cuando vence sleepAfter y queda facturando 24/7.
+    import signal
+    import sys
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(0))
     ThreadingHTTPServer(("0.0.0.0", int(os.environ.get("PORT", "8080"))), Manejador).serve_forever()
